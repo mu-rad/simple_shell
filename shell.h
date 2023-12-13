@@ -231,4 +231,6 @@ char **get_environ(info_t *);
 int _unsetenv(info_t *, char *);
 int _setenv(info_t *, char *, char *);
 
+char *string_toupper(char *s)
+
 #endif
