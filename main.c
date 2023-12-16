@@ -1,11 +1,11 @@
 #include "shell.h"
 
 /**
- * main -this is the  entry point
- * @an: responsible for arg count
- * @ap: this is the arg vector
+ * main -this is the entry point
+ * @an: this is arg count
+ * @ap:this is arg vector
  *
- * Return: 0 if  successful, and 1 if an error is encountered
+ * Return: 0 if  successful and 1 on error encountered
  */
 int main(int an, char **ap)
 {
@@ -27,7 +27,7 @@ int main(int an, char **ap)
 			if (errno == ENOENT)
 			{
 				_eputs(ap[0]);
-				_eputs(": 0: Sorry can't open this");
+				_eputs(": 0: Sorry can't open ");
 				_eputs(ap[1]);
 				_eputchar('\n');
 				_eputchar(BUF_FLUSH);
